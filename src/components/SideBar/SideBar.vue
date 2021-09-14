@@ -27,7 +27,7 @@
               class="text-icon"
               :class="{ 'mr-2': !sidebarcollapsed }"
             /> -->
-            <Unicons />
+            <unicon name="rocket" fill="limegreen"></unicon>
             <h1 :class="{ hidden: sidebarcollapsed }" class="text-secondary">
               {{ menu.title }}
             </h1>
@@ -67,10 +67,10 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import Unicons from "../Unicons/index.vue";
+import Rocket from "../Unicons/icons/monochrome/Rocket.vue";
 @Options({
   components: {
-    Unicons,
+    Rocket,
   },
   computed: {
     bodyClassObject() {
