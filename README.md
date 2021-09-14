@@ -1,4 +1,4 @@
-# admecommerce-v2
+# monkey-deploy
 
 ## Project setup
 ```

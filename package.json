@@ -1,5 +1,5 @@
 {
-  "name": "admecommerce-v2",
+  "name": "monkey-deploy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,6 +20,7 @@
     "vue": "^3.2.6",
     "vue-class-component": "^8.0.0-0",
     "vue-feather": "^2.0.0-rc",
+    "vue-inline-svg": "^3.0.0-beta.3",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },

@@ -1,9 +1,7 @@
 <template>
   <div :class="bodyClassObject">
     <div class="bg-dark-01 w-full h-full left-0 flex flex-col items-center">
-      <span class="text-primary text-2xl font-bold mt-8 mb-14"
-        >MonkeyDeploy</span
-      >
+      <span class="text-primary text-2xl font-bold mt-8 mb-14">MKD</span>
       <div
         v-for="(menu, index) in menuItems"
         :key="menu.name"
@@ -24,11 +22,12 @@
           @click="menuActions(index, menu.name)"
         >
           <div class="flex flex-row items-center justify-center">
-            <vue-feather
+            <!--  <vue-feather
               :type="menu.icon"
               class="text-icon"
               :class="{ 'mr-2': !sidebarcollapsed }"
-            />
+            /> -->
+            <Unicons />
             <h1 :class="{ hidden: sidebarcollapsed }" class="text-secondary">
               {{ menu.title }}
             </h1>
@@ -68,8 +67,11 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-
+import Unicons from "../Unicons/index.vue";
 @Options({
+  components: {
+    Unicons,
+  },
   computed: {
     bodyClassObject() {
       return {
@@ -108,9 +110,9 @@ import { Options, Vue } from "vue-class-component";
           ],
         },
         {
-          title: "Layout",
-          name: "Layout",
-          icon: "layout",
+          title: "Deploy",
+          name: "Deploy",
+          icon: "home",
           active: false, // Sempre usar essa var ou não aparece o menu
         },
       ],

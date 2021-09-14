@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Body from "@/views/Body/Body.vue";
 import Ecommerce from "@/views/Analytics/Ecommerce/Ecommerce.vue";
 import Layout from "@/views/Ecommerce/Layout/Layout.vue";
+import Deploy from "@/views/Apps/Deploy/Deploy.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -15,9 +16,9 @@ const routes: Array<RouteRecordRaw> = [
         component: Ecommerce,
       },
       {
-        path: "ecommerce/layout",
-        name: "Layout",
-        component: Layout,
+        path: "apps/deploy",
+        name: "Deploy",
+        component: Deploy,
       },
     ],
   },
