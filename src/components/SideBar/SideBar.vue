@@ -1,7 +1,9 @@
 <template>
   <div :class="bodyClassObject">
     <div class="bg-dark-01 w-full h-full left-0 flex flex-col items-center">
-      <span class="text-primary text-2xl font-bold mt-8 mb-14">DPC</span>
+      <span class="text-primary text-2xl font-bold mt-8 mb-14"
+        >MonkeyDeploy</span
+      >
       <div
         v-for="(menu, index) in menuItems"
         :key="menu.name"
@@ -173,7 +175,9 @@ import { Options, Vue } from "vue-class-component";
         this.$router.push({ name });
         if (this.menuItems[parentIndex].children[childindex]) {
           // eslint-disable-next-line
-					this.menuItems[parentIndex].children.forEach((childItem: any) => (childItem.childActive = false));
+          this.menuItems[parentIndex].children.forEach(
+            (childItem: any) => (childItem.childActive = false)
+          );
           this.menuItems[parentIndex].children[childindex].childActive = true;
         }
       } else {
